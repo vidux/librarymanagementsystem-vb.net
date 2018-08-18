@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8C69C06-9F8C-40E0-85E2-6C20BDE7A349}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LMS_HNDIT_16_GP.My.MyApplication</StartupObject>
+    <RootNamespace>LMS_HNDIT_16_GP</RootNamespace>
+    <AssemblyName>LMS_HNDIT-16-GP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LMS_HNDIT-16-GP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LMS_HNDIT-16-GP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Janosch500-Tropical-Waters-Folders-Library.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="forms\abu.Designer.vb">
+      <DependentUpon>abu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\abu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\allbooks.Designer.vb">
+      <DependentUpon>allbooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\allbooks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\CloudSync.Designer.vb">
+      <DependentUpon>CloudSync.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\CloudSync.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\groups.Designer.vb">
+      <DependentUpon>groups.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\groups.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\issue.Designer.vb">
+      <DependentUpon>issue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\issue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\libfees.Designer.vb">
+      <DependentUpon>libfees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\libfees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\logins-frm.Designer.vb">
+      <DependentUpon>logins-frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\logins-frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\logs.Designer.vb">
+      <DependentUpon>logs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\logs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\mngAdmins.Designer.vb">
+      <DependentUpon>mngAdmins.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\mngAdmins.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\returnsz.Designer.vb">
+      <DependentUpon>returnsz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\returnsz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modules\iniReadWrite.vb" />
+    <Compile Include="LibraryDataDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryDataDataSet.vb">
+      <DependentUpon>LibraryDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="modules\publicCodes.vb" />
+    <Compile Include="modules\zipfiles.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="forms\usrrrs.Designer.vb">
+      <DependentUpon>usrrrs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\usrrrs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modules\SQLcmdSender.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="forms\abu.resx">
+      <DependentUpon>abu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\allbooks.resx">
+      <DependentUpon>allbooks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\CloudSync.resx">
+      <DependentUpon>CloudSync.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\groups.resx">
+      <DependentUpon>groups.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\issue.resx">
+      <DependentUpon>issue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\libfees.resx">
+      <DependentUpon>libfees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\logins-frm.resx">
+      <DependentUpon>logins-frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\logs.resx">
+      <DependentUpon>logs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mngAdmins.resx">
+      <DependentUpon>mngAdmins.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\returnsz.resx">
+      <DependentUpon>returnsz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\usrrrs.resx">
+      <DependentUpon>usrrrs.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="LibraryDataDataSet.xsc">
+      <DependentUpon>LibraryDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>LibraryDataDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LibraryDataDataSet.xss">
+      <DependentUpon>LibraryDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Janosch500-Tropical-Waters-Folders-Library.ico" />
+    <Content Include="LibraryData.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
